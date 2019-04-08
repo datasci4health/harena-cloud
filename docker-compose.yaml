@@ -1,11 +1,14 @@
 version: "3.3"
 services:
 
+####swagger services
+#### ports 4000 to 4100
+
   swagger-ui:
     image: swaggerapi/swagger-ui
     container_name: "swagger-ui"
     ports:
-      - "5000:8080"
+      - "4000:8080"
 #    volumes:
 #      - ./swagger/openapi.json:/openapi.json
     environment:
@@ -16,5 +19,5 @@ services:
     image: swaggerapi/swagger-editor
     container_name: "swagger-editor"
     ports:
-      - "5001:8080"
+      - "4001:8080"
 
