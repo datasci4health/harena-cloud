@@ -1,23 +1,31 @@
-version: "3.3"
-services:
+ version: '3'
+ services:
 
-####swagger services
-#### ports 4000 to 4100
 
-  swagger-ui:
-    image: swaggerapi/swagger-ui
-    container_name: "swagger-ui"
-    ports:
-      - "4000:8080"
-#    volumes:
-#      - ./swagger/openapi.json:/openapi.json
-    environment:
-#      SWAGGER_JSON: /openapi.json
-      API_URL: ""
 
-  swagger-editor:
-    image: swaggerapi/swagger-editor
-    container_name: "swagger-editor"
-    ports:
-      - "4001:8080"
+  case-notebook-v1:
+   image: datasci4health/case-notebook:v1
+
+   container_name: case-notebook-v1
+   restart: always
+   ports:
+     - 8081:80
+     - 8881:8888
+
+  case-notebook-latest:
+   image: datasci4health/case-notebook:latest
+
+   container_name: case-notebook-latest
+   restart: always
+   ports:
+     - 8080:80
+     - 8880:8888
+
+  watchtower:
+    image: v2tec/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+#      - /root/.docker/config.json:/config.json
+    command: --interval 5
+
 
