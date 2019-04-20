@@ -5,6 +5,8 @@ sudo cp ./configs/apache2/000-default.conf /etc/apache2/sites-available/000-defa
 sudo cp ./configs/apache2/index.html /var/www/index.html 
 sudo systemctl restart apache2
 
+sudo docker-compose up -d
+
 sudo rm repositories -r
 mkdir   repositories  
 cd      repositories 

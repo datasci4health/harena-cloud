@@ -12,15 +12,6 @@
      - 8081:80
      - 8881:8888
 
-  case-notebook-latest:
-   image: datasci4health/case-notebook:latest
-
-   container_name: case-notebook-latest
-   restart: always
-   ports:
-     - 8080:80
-     - 8880:8888
-
   watchtower:
     image: v2tec/watchtower
     volumes:
