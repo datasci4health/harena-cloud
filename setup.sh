@@ -11,10 +11,23 @@ sudo rm repositories -r
 mkdir   repositories  
 cd      repositories 
 
+git clone https://github.com/datasci4health/harena-space
+cd  harena-space
+sudo docker-compose up -d
+cd ..
+
+
+git clone https://github.com/datasci4health/harena-manager
+cd  harena-manager
+sudo docker-compose up -d
+cd ..
+
+
 git clone https://github.com/datasci4health/case-notebook
 cd  case-notebook
 sudo docker-compose up -d
 cd ..
+
 
 git clone https://github.com/datasci4health/harena-logger
 cd  harena-logger
