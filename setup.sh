@@ -38,3 +38,5 @@ cd ..
 
 cd ..
 
+sudo systemctl restart apache2
+sudo docker ps -a
