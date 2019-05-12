@@ -1,17 +1,6 @@
  version: '3'
  services:
 
-
-
-  case-notebook-v1:
-   image: datasci4health/case-notebook:v1
-
-   container_name: case-notebook-v1
-   restart: always
-   ports:
-     - 8081:80
-     - 8881:8888
-
   watchtower:
     image: v2tec/watchtower
     volumes:
