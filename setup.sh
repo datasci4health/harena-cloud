@@ -11,8 +11,6 @@ sudo rm repositories -r
 mkdir   repositories  
 cd      repositories 
 
-
-
 git clone https://github.com/datasci4health/harena-space
 cd  harena-space
 sudo docker-compose -f docker-compose.yml -f ../../resources/docker/harena-space/docker-compose.yaml  up -d --build
@@ -22,11 +20,9 @@ cd ..
 git clone https://github.com/datasci4health/harena-manager
 cd  harena-manager
 sudo docker-compose up -d --build
-sudo docker-compose down
-sudo docker-compose run harena-manager adonis migration:run --force 
-sudo docker-compose run harena-manager adonis seed          --force
-sudo docker-compose down
-sudo docker-compose up -d 
+sleep 20
+sudo docker-compose exec harena-manager adonis migration:run --force 
+sudo docker-compose exec harena-manager adonis seed          --force
 cd ..
 
 
