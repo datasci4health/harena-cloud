@@ -2,24 +2,12 @@ version: '3'
 
 services:
 
-
   harena-manager:
     image: datasci4health/harena-manager:v1
-    ports:
-      - "10020:10020"
     environment:
       - ENV_SILENT=true      
-      - HOST=0.0.0.0
-      - PORT=10020
       - NODE_ENV=production
       - APP_NAME=harena-manager
-      - APP_URL=http://0.0.0.0:10020
+      - APP_URL=https://harena.ds4h.org
       - CACHE_VIEWS=false
       - APP_KEY=sHuh8734nANKdmasdk31345Kasd
-      - DB_CONNECTION=mysql
-      - DB_HOST=harena-manager-database
-      - DB_PORT=3306
-      - DB_DATABASE=harena-manager
-      - DB_USER=jacinto
-      - DB_PASSWORD=jacinto
-- HASH_DRIVER=bcrypt
