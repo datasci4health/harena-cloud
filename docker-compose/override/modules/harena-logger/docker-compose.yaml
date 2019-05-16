@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+
+  harena-logger:
+    image: datasci4health/harena-logger:v1
+    environment:
+      - HARENA_LOGGER_FLASK_HOST=0.0.0.0
