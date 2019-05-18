@@ -1,4 +1,4 @@
-sudo apt install htop vim sshfs apache2 php wget docker-compose git 
+sudo apt install -y htop vim sshfs apache2 php wget docker-compose git 
 sudo a2enmod proxy_http
 sudo rm /var/www/html/index.html 
 sudo cp ./configs/apache2/000-default.conf /etc/apache2/sites-available/000-default.conf
