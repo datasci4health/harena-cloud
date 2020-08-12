@@ -16,6 +16,7 @@ services:
       - HARENA_SPACE_URL=https://harena.ds4h.org/space
       - HARENA_SPACE_API_VERSION=v1
       - HARENA_MANAGER_URL=https://harena.ds4h.org/manager
+      - HARENA_MANAGER_URL_CLIENT=https://harena.ds4h.org/manager
       - HARENA_MANAGER_API_VERSION=v1
       - HARENA_LOGGER_URL=https://harena.ds4h.org/logger
       - HARENA_LOGGER_API_VERSION=v1      
