@@ -20,6 +20,13 @@ services:
       - HARENA_MANAGER_API_VERSION=v1
       - HARENA_LOGGER_URL=https://harena.ds4h.org/logger
       - HARENA_LOGGER_API_VERSION=v1      
+
+      - DB_CONNECTION=mysql
+      - DB_HOST=harena-manager-database
+      - DB_PORT=3306
+      - DB_USER=jacinto
+      - DB_PASSWORD=jacinto
+      - DB_DATABASE=harena-manager  
     entrypoint: /bin/bash -c "/bin/bash -c \"$${@}\""
     command: |
       /bin/bash -c "
