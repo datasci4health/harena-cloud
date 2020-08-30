@@ -11,3 +11,10 @@ services:
       - APP_URL=https://harena.ds4h.org/manager
       - CACHE_VIEWS=false
       - APP_KEY=sHuh8734nANKdmasdk31345Kasd
+    volumes:
+      - harena-manager:/app
+
+
+volumes:
+  harena-manager:
+    driver: "local"
