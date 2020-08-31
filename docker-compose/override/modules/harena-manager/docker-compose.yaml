@@ -8,7 +8,7 @@ services:
       - ENV_SILENT=true      
       - NODE_ENV=production
       - APP_NAME=harena-manager
-      - APP_URL=https://harena.ds4h.org/manager
+      - APP_URL=https://dev.harena.ds4h.org/manager
       - CACHE_VIEWS=false
       - APP_KEY=sHuh8734nANKdmasdk31345Kasd
     volumes:

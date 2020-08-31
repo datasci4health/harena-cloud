@@ -9,7 +9,7 @@ sudo apt install -y htop vim curl wget docker-compose
 #sudo systemctl restart apache2
 
 #sudo apt install -y python-certbot-apache
-# sudo certbot --apache -d harena.ds4h.org
+# sudo certbot --apache -d dev.harena.ds4h.org
 # sudo certbot renew --dry-run
 
 
