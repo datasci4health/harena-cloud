@@ -27,7 +27,7 @@ harena_override_docker_compose()
 
 
 #sudo rm harena -r
-#git clone https://github.com/datasci4health/harena
+git clone https://github.com/datasci4health/harena
 cd harena
 sudo sh ./run.sh
 cd ..
